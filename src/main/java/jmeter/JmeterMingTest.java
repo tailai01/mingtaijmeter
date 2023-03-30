@@ -22,9 +22,9 @@ public class JmeterMingTest implements JavaSamplerClient {
         String threadName = Thread.currentThread().getName();
         System.out.println(threadName);
         // 设置返回结果标签的名称,查看结果树的名称
-        result.setSampleLabel("ihrm-" + threadName);
+        result.setSampleLabel("mingTai-" + threadName);
         // 在Jmeter的GUI中展示请求数据  request-> request body
-        result.setSamplerData("请求的mobile为：" + this.mobile + "\n请求的密码为：" + this.password);
+        result.setSamplerData("请求的mobile为：" + this.mobile + "\n 请求的密码为：" + this.password);
 
         // 开始事务，开始计算时间
         result.sampleStart();
